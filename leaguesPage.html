@@ -41,7 +41,7 @@
             </ul>
           </div>
         </div>
-      </nav>
+    </nav>
       <div class="container-fluid">
         <div class="container" style="width: 100%; padding: 1rem 0 1rem 0;">
           <a href="sportPage.html" class="btn btn-outline-primary mb-3 fs-4">Football</a>
@@ -55,16 +55,10 @@
                 </div>
             </div>
 
-
             <div class="input-group mb-3">
               <input type="text" class="form-control" placeholder="From Leagues" aria-label="Recipient's username" aria-describedby="button-addon2">
               <button class="btn btn-primary" type="button" id="button-addon2">Search</button>
             </div>
-
-          
-
-            
-            
 
             <div class="card mb-3">
               <h5 class="card-header">All Leagues</h5>
@@ -134,7 +128,12 @@
     e.preventDefault();
     var country = document.getElementById('countrySelect').value;
     var league = document.getElementById('leagueSelect').value;
-    alert('Seçilen Ülke: ' + country + '\\nSeçilen Lig: ' + league);
+    if(league == "Süper Lig"){
+
+      window.location.href ="league.html";
+    }
+    
+    alert('Seçilen Ülke: ' + country + '\nSeçilen Lig: ' + league);
   });
 </script>
 
