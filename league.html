@@ -52,11 +52,21 @@
 
     <div class="container-fluid">
         <div class="container" style="width: 100%; padding: 1rem 0 1rem 0;">
-            <a href="sportPage.html" class="btn btn-outline-primary mb-3 fs-4">Football</a>
-            <a href="leaguesPage.html" class="btn btn-outline-primary mb-3 fs-4">Leagues</a>
-            <a href="#" class="btn btn-primary mb-3 fs-4">Turkey</a>
             
-            <h1 class="mb-3 mt-3">Süper Lig</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="sportPage.html">Football</a></li>
+                  <li class="breadcrumb-item"><a href="leaguesPage.html">Leagues</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Turkey</li>
+                </ol>
+            </nav>
+            
+            
+            <div class="table-group-divider opacity-25 mb-4 mt-4"></div>
+            
+
+            <h1 class="mb-3">Süper Lig</h1>
             <div class="card text-bg-dark mb-3" style="width: 100%;">
                 <img src="banner.jpg" class="card-img-top" alt="..." style="height: 6.7rem; object-fit: cover; object-position: center; filter: brightness(40%) contrast(110%);">
                 <div class="card-img-overlay">
@@ -64,7 +74,7 @@
                   <p class="card-text" style="text-shadow: 0 0 10px black;">The Turkish Süper Lig is one of the premier football leagues in Europe, known for its passionate fans and competitive matches.</p>
                 </div>
             </div>
-            <div class="container my-4">
+            <div class="container my-4 mb-3">
                 <div class="row">
                   <div class="col-6 col-md-3 mb-3">
                     <h6 class="fw-bold">Establishment</h6>
@@ -88,13 +98,14 @@
               
               
               
-              
-              
+              <div class="container mb-5">
+                  <div class="table-group-divider opacity-25"></div>
+              </div>
               
             
               
-              
-              <div class="container">
+              <div class="container mb-5">
+                  <h3>Teams</h3>
                 <input class="form-control search-bar" id="teamSearch" type="text" placeholder="Search Teams...">
                 <div id="teamList">
                   <!-- Example Team Buttons -->
@@ -107,7 +118,11 @@
                   <!-- Add more team buttons here -->
                 </div>
               </div>
-              
+
+            <div class="container mb-5">
+                <div class="table-group-divider opacity-25"></div>
+            </div>
+
               <h2>Standings</h2>
               <div class="standings">
                 <!-- Example Standings Table -->
