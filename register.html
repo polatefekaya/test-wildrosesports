@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kayıt Sayfası</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<!-- FontAwesome CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  body{
+    background: #ffffff;
+}
+.account-block {
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    object-position: center;
+    background-position: center;
+    background-size: cover;
+    
+    height: 100%;
+    position: relative;
+}
+.account-block .overlay {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.account-block .account-testimonial {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    margin: 0 auto;
+    padding: 0 1.75rem;
+    bottom: 3rem;
+    left: 0;
+    right: 0;
+}
+
+.text-theme {
+    color: #5369f8 !important;
+}
+
+.btn-theme {
+    background-color: #5369f8;
+    border-color: #5369f8;
+    color: #fff;
+}
+  .account-block {
+    /* Arkaplan rengini isteğinize göre ayarlayın */
+    background-color: #ffffff; /* Örnek beyaz arkaplan */
+  }
+</style>
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">WildRose Sports</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="register.html">Register</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto ms-lg-0 me-lg-3">
+              <li class="nav-item d-flex align-items-center">
+                <div class="card" style="min-width: 1.5rem; max-width: 1.5rem; max-height: 1.5rem; aspect-ratio: 1/1; overflow: hidden; object-position: center;">
+                  <img src="pp.jpg" class="card-img-top img-fluid" alt="Profil Fotoğrafı" style="height: 100%; object-fit: cover; object-position: center;">
+                </div>
+                <a class="nav-link ms-2 ms-lg-1" href="profile.html">Profile</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<div id="main-wrapper" class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-xl-10">
+            <div class="card border-1 overflow-hidden">
+                <div class="card-body p-0">
+                    <div class="row no-gutters">
+                        <div class="col-sm-8 col-md-7 col-lg-6 pe-0 me-0">
+                            <div class="p-5 pt-4">
+                                <div class="mb-5">
+                                    <h3 class="h4 font-weight-bold text-primary">Register</h3>
+                                </div>
+
+                                <h6 class="h5 mb-0">Create a <span class="text-primary">WildRose</span> Account</h6>
+                                <p class="text-muted mt-2 mb-5">And connect it to <span class="text-black">WildSports</span></p>
+
+                                <form>
+                                    <div class="form-group mb-4">
+                                        <p class="text-muted mt-2 mb-1">First Name</p>
+                                        <div class="input-group">
+                                            <span class="input-group-text opacity-50"><i class="fa fa-user"></i></span>
+                                            <input type="text" class="form-control" id="firstName" placeholder="Type your First Name" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <p class="text-muted mt-2 mb-1">Last Name</p>
+                                        <div class="input-group">
+                                            <span class="input-group-text opacity-50"><i class="fa fa-user"></i></span>
+                                            <input type="text" class="form-control" id="lastName" placeholder="Type your Last Name" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <p class="text-muted mt-2 mb-1">Username</p>
+                                        <div class="input-group">
+                                            <span class="input-group-text opacity-50"><i class="fa fa-at"></i></span>
+                                            <input type="text" class="form-control" id="userName" placeholder="Type your username" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <p class="text-muted mt-2 mb-1">E-mail</p>
+                                        <div class="input-group">
+                                            <span class="input-group-text opacity-50"><i class="fa fa-envelope"></i></span>
+                                            <input type="email" class="form-control" id="registerEmail" placeholder="Type your E-Mail" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-5">
+                                        <p class="text-muted mt-2 mb-1">Password</p>
+                                        <div class="input-group">
+                                            <span class="input-group-text opacity-50"><i class="fa fa-lock"></i></span>
+                                            <input type="password" class="form-control" id="registerPassword" placeholder="Create your password" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <button type="submit" class="btn btn-primary">Continue</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-5 col-lg-6 d-none d-sm-inline d-md-inline-block d-lg-inline-block ps-0 ms-0 overflow-hidden">
+                            <div class="account-block rounded-right" style="background-image: url(banner.jpg);">
+                                <div class="overlay rounded-right"></div>
+                                <div class="account-testimonial">
+                                    <h4 class="text-white mb-4">All Sports In One Place</h4>
+                                    <p class="lead text-white d-none d-md-inline-block">All the data you want, all the interaction you can want.</p>
+                                    <p class="d-none d-md-inline-block">WildSports</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end card-body -->
+            </div>
+            <!-- end card -->
+
+            <p class="text-muted text-center mt-3 mb-0">Already have an account? <a href="login.html" class="text-primary ml-1">Login</a></p>
+
+            <!-- end row -->
+
+        </div>
+        <!-- end col -->
+    </div>
+    <!-- Row -->
+</div>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
