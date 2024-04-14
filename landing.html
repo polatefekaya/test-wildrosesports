@@ -31,55 +31,56 @@
             background-color: #ffffff00;
         }
         .blurCardCenter{
-            background-color: #42a5f5;
+            background: #42a4f521;
             width: 75%;
             height: 75%;
             left: 50%;
             top: 50%;
+            transform: translate3d(0, 0, 0);
             transform: translate(-50%, -50%);
+            -webkit-filter: url(#svgBlur);
+            filter: url(#svgBlur);
             position: absolute;
             z-index: -1;
-            -webkit-filter: blur(250px);
-            filter: blur(250px);
-            transform: translate3d(0, 0, 0);
-            will-change: transform;
-            opacity: 20%;
         }
         .blurCardRight{
-            background-color: #42a5f5;
+            background: #42a4f521;
             width: 75%;
             height: 75%;
             left: 100%;
             top: 50%;
+            transform: translate3d(0, 0, 0);
             transform: translate(-90%, -50%);
             position: absolute;
             z-index: -1;
-            -webkit-filter: blur(250px);
-            filter: blur(250px);
-            transform: translate3d(0, 0, 0);
-            will-change: transform;
-            opacity: 20%;
+            -webkit-backdrop-filter: blur(250px);
+            backdrop-filter: blur(250px);
         }
         .blurCardLeft{
-            background-color: #42a5f5;
+            background: #42a4f521;
             width: 75%;
             height: 75%;
             left: 0%;
             top: 50%;
+            transform: translate3d(0, 0, 0);
             transform: translate(-10%, -50%);
             position: absolute;
             z-index: -1;
-            -webkit-filter: blur(250px);
-            filter: blur(250px);
-            transform: translate3d(0, 0, 0);
-            will-change: transform;
-            opacity: 20%;
+            -webkit-backdrop-filter: blur(250px);
+            backdrop-filter: blur(250px);
             
         }
     </style>
+       
 </head>
 <body class="bgColor body">
-   
+
+  <svg style="position: absolute;">
+    <filter id="svgBlur" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="100" />
+      <rect x="-100%" y="-100%" width="300%" height="300%" fill="white" fill-opacity="0" />
+    </filter>
+   </svg>
   <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">WildSports</a>
