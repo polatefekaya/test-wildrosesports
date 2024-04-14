@@ -14,6 +14,7 @@
             -webkit-transform: translate3d(0, 0, 0);
             -moz-transform: translate3d(0, 0, 0);
             transform: translate3d(0,0,0);
+            overflow: hidden;
       }
         .hColor{
             color: #001233;
@@ -24,6 +25,9 @@
         .hsColor{
             color: #0466c8;
         }
+        .wColor{
+            color:#f7fdff;
+        }
         .bgColor{
             background-color: #f7fdff;
         }
@@ -31,7 +35,7 @@
             background-color: #ffffff00;
         }
         .blurCardCenter{
-            background: #42a4f521;
+            background: #42a4f525;
             width: 75%;
             height: 75%;
             left: 50%;
@@ -44,31 +48,30 @@
             z-index: -1;
         }
         .blurCardRight{
-            background: #42a4f521;
+            background: #42a4f525;
             width: 75%;
             height: 75%;
             left: 100%;
             top: 50%;
             transform: translate3d(0, 0, 0);
             transform: translate(-90%, -50%);
+            -webkit-filter: url(#svgBlur);
+            filter: url(#svgBlur);
             position: absolute;
             z-index: -1;
-            -webkit-backdrop-filter: blur(250px);
-            backdrop-filter: blur(250px);
         }
         .blurCardLeft{
-            background: #42a4f521;
+            background: #42a4f525;
             width: 75%;
             height: 75%;
             left: 0%;
             top: 50%;
             transform: translate3d(0, 0, 0);
             transform: translate(-10%, -50%);
+            -webkit-filter: url(#svgBlur);
+            filter: url(#svgBlur);
             position: absolute;
-            z-index: -1;
-            -webkit-backdrop-filter: blur(250px);
-            backdrop-filter: blur(250px);
-            
+            z-index: -1;            
         }
     </style>
        
@@ -81,22 +84,22 @@
       <rect x="-100%" y="-100%" width="300%" height="300%" fill="white" fill-opacity="0" />
     </filter>
    </svg>
-  <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">WildSports</a>
+  <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #42a4f525;">
+    <div class="container-fluid" >
+      <a class="navbar-brand hColor" href="#">WildSports</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link hColor" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link hColor" href="#">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link hColor" href="#">Contact</a>
           </li>
         </ul>
         <ul class="navbar-nav ms-auto ms-lg-0 me-lg-3">
@@ -104,7 +107,7 @@
             <div class="card" style="min-width: 1.5rem; max-width: 1.5rem; max-height: 1.5rem; aspect-ratio: 1/1; overflow: hidden; object-position: center;">
               <img src="pp.jpg" class="card-img-top img-fluid" alt="Profil Fotoğrafı" style="height: 100%; object-fit: cover; object-position: center;">
             </div>
-            <a class="nav-link ms-2 ms-lg-1" href="profile.html">Profile</a>
+            <a class="nav-link ms-2 ms-lg-1 hColor" href="profile.html">Profile</a>
           </li>
         </ul>
       </div>
