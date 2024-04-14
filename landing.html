@@ -36,11 +36,13 @@
             height: 75%;
             left: 50%;
             top: 50%;
+            transform: translate3d(0, 0, 0);
             transform: translate(-50%, -50%);
             position: absolute;
             z-index: -1;
             filter: blur(250px);
             -webkit-filter: blur(250px);
+            will-change: transform;
             opacity: 20%;
         }
         .blurCardRight{
@@ -49,11 +51,13 @@
             height: 75%;
             left: 100%;
             top: 50%;
+            transform: translate3d(0, 0, 0);
             transform: translate(-90%, -50%);
             position: absolute;
             z-index: -1;
             filter: blur(250px);
             -webkit-filter: blur(250px);
+            will-change: transform;
             opacity: 20%;
         }
         .blurCardLeft{
@@ -62,11 +66,13 @@
             height: 75%;
             left: 0%;
             top: 50%;
+            transform: translate3d(0, 0, 0);
             transform: translate(-10%, -50%);
             position: absolute;
             z-index: -1;
             filter: blur(250px);
             -webkit-filter: blur(250px);
+            will-change: transform;
             opacity: 20%;
             
         }
