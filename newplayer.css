@@ -1,0 +1,89 @@
+.bgLightGrey{
+    background-color: rgb(245, 245, 245);
+}
+.bgWhite{
+    background-color: white;
+}
+.v-align{
+    top: -50%;
+    transform: translate(0,50%);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.v-align-bio{
+    top: -40%;
+    transform: translate(0,34%);
+}
+.player-img{
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+.player-img-div{
+    height: 80%;
+}
+
+.noto-sans {
+font-family: "Noto Sans Mono", monospace;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+font-variation-settings:
+"wdth" 100;
+}
+
+.fredoka {
+font-family: "Fredoka", sans-serif;
+font-optical-sizing: auto;
+font-weight: 300;
+font-style: normal;
+font-variation-settings:
+"wdth" 100;
+}
+
+.logo-v{
+    min-height: 50px;
+    max-height: 50px;
+    max-width: 50px;
+    min-width: 50px;
+}
+.large-header-v{
+    font-size: 18px;
+}
+.small-header-v{
+    font-size: 11px;
+}
+.normal-text-v{
+    font-size: 12px;
+}
+
+.desktop{
+    display: initial;
+}
+.mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .logo-v{
+        min-height: 25px;
+        max-height: 25px;
+        max-width: 25px;
+        min-width: 25px;
+    }
+    .large-header-v{
+        font-size: 14px;
+        
+    }
+    .small-header-v{
+        font-size: 6px;
+    }
+    .normal-text-v{
+        font-size: 8px;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: initial;
+    }
+}

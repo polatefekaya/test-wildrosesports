@@ -11,48 +11,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inconsolata:wght@200..900&family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
+<link href="newplayer.css" rel="stylesheet">
 <style>
-    .bgLightGrey{
-        background-color: rgb(245, 245, 245);
-    }
-    .bgWhite{
-        background-color: white;
-    }
-    .v-align{
-        top: -50%;
-        transform: translate(0,50%);
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-    .v-align-bio{
-        top: -40%;
-        transform: translate(0,34%);
-    }
-    .player-img{
-        height: 100%;
-        aspect-ratio: 1/1;
-    }
-    .player-img-div{
-        height: 80%;
-    }
 
- .noto-sans {
-  font-family: "Noto Sans Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-
- .fredoka {
-  font-family: "Fredoka", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
 
 </style>
 </head>
@@ -104,21 +65,29 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-6 mt-4 mt-md-0">
+                                <div class="col-12 col-md-6 mt-4 mt-md-0  ps-4 ps-md-0">
                                     <div class="container border-1" style="border-color: rgb(145, 147, 150);;">
                                         <div class="row">
                                             <div class="col-12">
-                                                <h6 class="hlColor fw-normal opacity-50">Currently Playing In</h6>
+                                                <div class="desktop">
+                                                    <h6 class="hlColor fw-normal opacity-50">Currently Playing In</h6>
+                                                </div>
+                                                <div class="mobile">
+                                                    <p class="hlColor fw-normal opacity-50 mb-0">Currently Playing In</p>
+                                                </div>
                                             </div>
                                             <div class="col-12 mt-2">
                                                 <div class="row">
                                                     <div class="col d-flex">
-                                                        <div class="h-100" style="height: 50px; max-height: 50px; min-height: 50px; max-width: 50px; min-width: 50px;">
+                                                        <div class="h-100 logo-v">
                                                             <img src="https://media.api-sports.io/football/teams/85.png" class="player-img rounded-4">
                                                         </div>
-                                                        <div class="row ms-2">
-                                                            <div class="col-12">
+                                                        <div class="row ms-1 ms-lg-2">
+                                                            <div class="col-12 desktop">
                                                                 <h4 class="hlColor fw-semibold mt-2">Paris Saint Germain</h4>
+                                                            </div>
+                                                            <div class="col-12 mobile">
+                                                                <h6 class="hlColor fw-semibold mt-1">Paris Saint Germain</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -128,16 +97,30 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row mt-5 mt-md-5">
-                                <div class="col-12 col-md">
-                                    <p class="mb-2"><span class="fw-semibold">Age: </span>28</p>
-                                    <p class="mb-2"><span class="fw-semibold">BirthDate: </span>1992-02-05</p>
-                                    <p class="mb-2"><span class="fw-semibold">Nationality: </span>Brazil</p>
+                            <div class="row mt-5 ps-5 ps-md-0">
+                                <div class="col-3 col-md-3 col-lg-2 mb-3 mb-lg-0">
+                                  <h6 class="fw-bold">28</h6>
+                                  <p class="small">Age</p>
                                 </div>
-                                <div class="col-12 col-md">
-                                    <p class="mb-2"><span class="fw-semibold">BirthPlace: </span>Mogi das Cruzes, Brazil</p>
-                                    <p class="mb-2"><span class="fw-semibold">Height: </span>175 cm</p>
-                                    <p class="mb-2"><span class="fw-semibold">Weight: </span>68 kg</p>
+                                <div class="col-4 col-md-3 col-lg-2 mb-3 mb-lg-0">
+                                  <h6 class="fw-bold">175 cm</h6>
+                                  <p class="small">Height</p>
+                                </div>
+                                <div class="col-4 col-md-3 col-lg-2 mb-3 mb-lg-0">
+                                  <h6 class="fw-bold">68 kg</h6>
+                                  <p class="small">Weight</p>
+                                </div>
+                                <div class="col-3 col-md-3 col-lg-2">
+                                    <h6 class="fw-bold">Mogi das Cruzes</h6>
+                                    <p class="small">BirthPlace</p>
+                                </div>
+                                <div class="col-4 col-md-3 col-lg-2">
+                                    <h6 class="fw-bold">1992-02-05</h6>
+                                    <p class="small">BirthDate</p>
+                                </div>
+                                <div class="col-4 col-md-3 col-lg-2">
+                                    <h6 class="fw-bold">Brazil</h6>
+                                    <p class="small">Nationality</p>
                                 </div>
                             </div>
                         </div>
